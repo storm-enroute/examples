@@ -27,3 +27,11 @@ build:
       fi
     - echo "Pull request no. $DRONE_PULL_REQUEST"
     - ./build-all.sh $(which sbt)
+notify:
+  irc:
+    prefix: storm-enroute build
+    nick: eve-bot
+    channel: storm-enroute-dev
+    server:
+      host: chat.freenode.net
+      port: 6667
