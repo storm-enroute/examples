@@ -26,4 +26,4 @@ build:
         export SONATYPE_PASS=""
       fi
     - echo "Pull request no. $DRONE_PULL_REQUEST"
-    - ./build-all.sh
+    - ./build-all.sh $(which sbt)
