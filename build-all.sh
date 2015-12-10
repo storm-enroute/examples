@@ -15,11 +15,11 @@ function test() {
   declare path=$1
   declare commands=$2
   echo "Building $path with commands: $commands"
-  cd $SCRIPT_PATH/$path
-  $SBT_CMD $commands
+  cd $SCRIPT_PATH/"$path"
+  $SBT_CMD "$commands"
 }
 
 test mecha-super-repo \
-  "\"mecha-track examples-core-utils ; mecha-track examples-application ; compile\""
+  "mecha-track examples-core-utils ; mecha-track examples-application ; compile"
 
 cd $CURR_DIR
