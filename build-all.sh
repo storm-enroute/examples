@@ -17,6 +17,7 @@ function test() {
   $SBT_CMD $commands
 }
 
-test mecha-super-repo "clean compile"
+test mecha-super-repo \
+  "mecha-track examples-core-utils ; mecha-track examples-application; compile"
 
 cd $CURR_DIR
