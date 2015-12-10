@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 if [ $# -ne 1 ]; then
   echo "Please specify the SBT command as the first argument. Exiting."
   exit 1
