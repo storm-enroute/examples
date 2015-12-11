@@ -21,7 +21,6 @@ function test() {
 
 test mecha-super-repo \
   "mecha-track examples-core-utils examples-application"
-test mecha-super-repo \
-  "compile"
+test mecha-super-repo "compile"
 
 cd $CURR_DIR
