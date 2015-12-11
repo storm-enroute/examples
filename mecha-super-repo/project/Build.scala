@@ -8,7 +8,6 @@ import sbt.Keys._
 
 
 object MechaSuperRepoBuild extends MechaSuperBuild {
-
   lazy val mechaSuperRepoSettings = Defaults.defaultSettings ++
     defaultMechaSuperSettings ++ Seq(
     name := superName,
@@ -23,5 +22,4 @@ object MechaSuperRepoBuild extends MechaSuperBuild {
   val superDirectory = file(".")
 
   val superSettings = mechaSuperRepoSettings
-
 }
