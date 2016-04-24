@@ -1,3 +1,3 @@
 # Storm Enroute Examples
 
-Examples usages of different libraries and projects.
+Usage examples for different libraries and projects.
